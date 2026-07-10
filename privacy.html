@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Attendance Manager</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; margin-top: 24px; }
+    p { margin: 8px 0; }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    hr { margin: 32px 0; border: none; border-top: 1px solid #ddd; }
+    .footer { font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Attendance Manager</strong> (the "App") is a local attendance management tool that communicates with ZKTeco biometric devices on your local network. This policy describes what data the App accesses and how it is handled.</p>
+
+  <hr>
+
+  <h2>Data Collected</h2>
+
+  <h3>Device Connection Credentials</h3>
+  <ul>
+    <li><strong>IP address, port, and device password</strong> — used solely to connect to your ZKTeco device. Stored locally on your machine in a SQLite database. Never transmitted to any external server.</li>
+  </ul>
+
+  <h3>Attendance Records</h3>
+  <ul>
+    <li><strong>User ID, timestamp, punch status</strong> — synced from your ZKTeco device to your local SQLite database. All data stays on your machine. Never sent to any external server.</li>
+  </ul>
+
+  <h3>License Validation</h3>
+  <ul>
+    <li><strong>License key and machine fingerprint (SHA-256 hash of machine-uid)</strong> — sent to Keygen (api.keygen.sh) solely for license activation and validation. The fingerprint is a one-way hash and cannot be used to identify you personally.</li>
+  </ul>
+
+  <h3>Local Preferences</h3>
+  <ul>
+    <li><strong>Locale selection (English/Arabic) and app settings</strong> — stored locally. Never transmitted.</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do <strong>not</strong> sell, rent, or share your data with third parties. The only external service contacted is Keygen (api.keygen.sh) for license validation, which receives only the license key and a hashed device fingerprint.</p>
+
+  <h2>Data Storage & Security</h2>
+  <p>All attendance data, user information, and configuration are stored in a local SQLite database on your machine. No cloud backup or remote access is provided. You control the data entirely.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>The App uses the following third-party services:</p>
+  <ul>
+    <li><strong>Keygen</strong> (api.keygen.sh) — license activation and validation. <a href="https://keygen.sh/privacy/" target="_blank">Keygen Privacy Policy</a></li>
+    <li><strong>Tauri Updater</strong> — checks for app updates by fetching <code>updates.json</code> from GitHub Pages. No personal data is transmitted.</li>
+  </ul>
+
+  <h2>Data Retention & Deletion</h2>
+  <p>All data is retained in the local SQLite database until you uninstall the App or manually delete it. To remove all data, uninstall the application and delete the <code>attendance.db</code> file from the app's data directory.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. Changes will be posted at this URL.</p>
+
+  <hr>
+
+  <p class="footer"><strong>Attendance Manager</strong> — Ahmed Coder<br>Last updated: July 2026</p>
+</body>
+</html>
