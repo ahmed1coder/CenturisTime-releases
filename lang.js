@@ -31,15 +31,18 @@
       if (text !== null) node.innerHTML = text;
     }
 
-    var toggle = document.getElementById("lang-toggle");
-    if (toggle) toggle.textContent = isAr ? "English" : "العربية";
+    var opts = document.querySelectorAll(".lang-opt");
+    for (var j = 0; j < opts.length; j++) {
+      var opt = opts[j];
+      var active = opt.getAttribute("data-lang") === lang;
+      opt.classList.toggle("active", active);
+      opt.setAttribute("aria-pressed", active ? "true" : "false");
+    }
   }
 
-  function toggle() {
-    var current = getStored() === "ar" ? "ar" : "en";
-    var next = current === "ar" ? "en" : "ar";
-    setStored(next);
-    apply(next);
+  function setLang(lang) {
+    setStored(lang);
+    apply(lang);
   }
 
   function init() {
@@ -47,8 +50,12 @@
     var initial = stored === "ar" || stored === "en" ? stored : "en";
     apply(initial);
 
-    var toggle = document.getElementById("lang-toggle");
-    if (toggle) toggle.addEventListener("click", toggle);
+    var opts = document.querySelectorAll(".lang-opt");
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].addEventListener("click", function () {
+        setLang(this.getAttribute("data-lang"));
+      });
+    }
   }
 
   if (document.readyState === "loading") {
