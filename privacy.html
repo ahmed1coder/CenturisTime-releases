@@ -14,48 +14,55 @@
     <div class="nav-inner">
       <a class="brand" href="index.html">
         <img src="banner.svg" alt="CenturisTime logo" />
-        CenturisTime
+        <span data-en="CenturisTime" data-ar="سنتوريس تايم">CenturisTime</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#download">Download</a>
-        <a href="index.html">Home</a>
+        <a href="index.html#features" data-en="Features" data-ar="المزايا">Features</a>
+        <a href="index.html#download" data-en="Download" data-ar="تحميل">Download</a>
+        <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">العربية</button>
       </div>
     </div>
   </nav>
 
   <main class="doc">
-    <h1>Privacy Policy</h1>
-    <p class="doc-meta">Effective date: 2026-07-18 · Last updated: 2026-07-18</p>
+    <h1 data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</h1>
+    <p class="doc-meta" data-en="Effective date: 2026-07-18 · Last updated: 2026-07-18"
+       data-ar="تاريخ السريان: 2026-07-18 · آخر تحديث: 2026-07-18">Effective date: 2026-07-18 · Last updated: 2026-07-18</p>
 
-    <span class="pill">Local-first · No uploads</span>
+    <span class="pill" data-en="Local-first · No uploads" data-ar="بياناتك محليًا · بلا رفع">Local-first · No uploads</span>
 
-    <p>
+    <p data-en="CenturisTime is designed around a simple principle: your attendance data belongs to you and stays on your machine. This policy explains what information the application handles, where it is stored, and who (if anyone) it is shared with."
+       data-ar="صُمّم CenturisTime حول مبدأ بسيط: بيانات الحضور الخاصة بك ملك لك وتبقى على جهازك. توضح هذه السياسة ما هي المعلومات التي يعالجها التطبيق، وأين تُخزَّن، ومع من (إن وُجد) تُشارَك.">
       CenturisTime is designed around a simple principle: <strong>your attendance
       data belongs to you and stays on your machine.</strong> This policy explains
       what information the application handles, where it is stored, and who (if anyone)
       it is shared with.
     </p>
 
-    <h2>Data Collected</h2>
-    <p>CenturisTime processes the following categories of data locally on your device:</p>
+    <h2 data-en="Data Collected" data-ar="البيانات التي يتم جمعها">Data Collected</h2>
+    <p data-en="CenturisTime processes the following categories of data locally on your device:"
+       data-ar="يعالج CenturisTime الفئات التالية من البيانات محليًا على جهازك:">CenturisTime processes the following categories of data locally on your device:</p>
 
-    <h3>Device connection credentials</h3>
-    <p>
+    <h3 data-en="Device connection credentials" data-ar="بيانات اتصال الجهاز">Device connection credentials</h3>
+    <p data-en="The IP address, port, and password you enter to connect to an attendance device are stored only in the local application database on your computer. They are never transmitted to CenturisTime, its developers, or any third party."
+       data-ar="يُخزَّن عنوان IP والمنفذ وكلمة المرور التي تدخلها للاتصال بجهاز حضور في قاعدة بيانات التطبيق المحلية على جهازك فقط. لا تُرسل قط إلى CenturisTime أو لمطوريها أو لأي طرف ثالث.">
       The IP address, port, and password you enter to connect to an attendance
       device are stored only in the local application database on your computer.
       They are never transmitted to CenturisTime, its developers, or any third party.
     </p>
 
-    <h3>Attendance records</h3>
-    <p>
+    <h3 data-en="Attendance records" data-ar="سجلات الحضور">Attendance records</h3>
+    <p data-en="Attendance logs, punch records, and timestamps pulled from your devices, as well as employee and user records, are stored locally in an encrypted SQLite database. This data is not uploaded anywhere."
+       data-ar="تُخزَّن سجلات الحضور وضربات البصمة والطوابع الزمنية المستخرجة من أجهزتك، بالإضافة إلى سجلات الموظفين والمستخدمين، محليًا في قاعدة بيانات SQLite مشفّرة. هذه البيانات لا تُرفع إلى أي مكان.">
       Attendance logs, punch records, and timestamps pulled from your devices, as
       well as employee and user records, are stored locally in an encrypted SQLite
       database. This data is not uploaded anywhere.
     </p>
 
-    <h3>License validation</h3>
-    <p>
+    <h3 data-en="License validation" data-ar="التحقق من الترخيص">License validation</h3>
+    <p data-en="To activate the software, you provide a Hardware ID derived from your machine and load a signed license file (.lic). The Hardware ID is a one-way fingerprint used solely to bind the license to your device. It is not sent to any server for validation — verification happens entirely on your machine."
+       data-ar="لتفعيل البرنامج، توفّر معرّف جهاز مشتقًا من جهازك وتحمّل ملف ترخيص موقّع (.lic). معرّف الجهاز هو بصمة أحادية الاتجاه تُستخدم فقط لربط الترخيص بجهازك. لا يُرسل إلى أي خادم للتحقق — بل يحدث التحقق بالكامل على جهازك.">
       To activate the software, you provide a Hardware ID derived from your machine
       and load a signed license file (<code>.lic</code>). The Hardware ID is a
       one-way fingerprint used solely to bind the license to your device. It is not
@@ -63,64 +70,74 @@
       machine.
     </p>
 
-    <h3>Local preferences</h3>
-    <p>
+    <h3 data-en="Local preferences" data-ar="التفضيلات المحلية">Local preferences</h3>
+    <p data-en="UI settings such as your selected language (English or Arabic) and saved connection profiles are kept in local application storage."
+       data-ar="تُحفظ إعدادات الواجهة مثل اللغة المختارة (الإنجليزية أو العربية) وملفات الاتصال المحفوظة في التخزين المحلي للتطبيق.">
       UI settings such as your selected language (English or Arabic) and saved
       connection profiles are kept in local application storage.
     </p>
 
-    <h2>Data Sharing</h2>
-    <p>
+    <h2 data-en="Data Sharing" data-ar="مشاركة البيانات">Data Sharing</h2>
+    <p data-en="We do not sell, rent, or share your personal or attendance data with anyone. Because all data resides on your device and is never uploaded, there is no data to share."
+       data-ar="نحن لا نبيع بياناتك الشخصية أو بيانات الحضور أو نؤجرها أو نشاركها مع أي أحد. نظرًا لأن جميع البيانات موجودة على جهازك ولا تُرفع قط، فلا توجد بيانات لمشاركتها.">
       <strong>We do not sell, rent, or share your personal or attendance data with
       anyone.</strong> Because all data resides on your device and is never uploaded,
       there is no data to share.
     </p>
 
-    <h2>Data Storage &amp; Security</h2>
-    <p>
+    <h2 data-en="Data Storage &amp; Security" data-ar="تخزين البيانات وأمنها">Data Storage &amp; Security</h2>
+    <p data-en="All stored data lives in an encrypted local SQLite database (attendance.db.enc) on your computer, protected with AES-256-GCM using a machine-bound key. The application communicates only with the attendance devices you explicitly configure, over your local network."
+       data-ar="تعيش جميع البيانات المخزّنة في قاعدة بيانات SQLite محلية مشفّرة (attendance.db.enc) على جهازك، محمية بـ AES-256-GCM باستخدام مفتاح مرتبط بجهازك. يتواصل التطبيق فقط مع أجهزة الحضور التي تضبطها صراحةً، عبر شبكتك المحلية.">
       All stored data lives in an encrypted local SQLite database (<code>attendance.db.enc</code>)
       on your computer, protected with AES-256-GCM using a machine-bound key. The
       application communicates only with the attendance devices you explicitly
       configure, over your local network.
     </p>
 
-    <h2>Third-Party Services</h2>
-    <p>
+    <h2 data-en="Third-Party Services" data-ar="خدمات الأطراف الثالثة">Third-Party Services</h2>
+    <p data-en="CenturisTime does not embed analytics, trackers, or advertising SDKs. The only outbound network activity is:"
+       data-ar="لا يتضمن CenturisTime أدوات تحليل أو متتبعات أو حزم إعلانية. النشاط الشبكي الصادر الوحيد هو:">
       CenturisTime does not embed analytics, trackers, or advertising SDKs. The only
       outbound network activity is:
     </p>
     <ul>
-      <li><strong>Automatic updates</strong> — the app checks a public update manifest
+      <li data-en="Automatic updates — the app checks a public update manifest and downloads a new installer when available. No personal data is sent with this request."
+          data-ar="تحديثات تلقائية — يتحقق التطبيق من قائمة تحديثات عامة وينزّل مثبّتًا جديدًا عند توفره. لا تُرسل أي بيانات شخصية مع هذا الطلب."><strong>Automatic updates</strong> — the app checks a public update manifest
         and downloads a new installer when available. No personal data is sent with
         this request.</li>
-      <li><strong>License requests</strong> — only if you choose to contact the
+      <li data-en="License requests — only if you choose to contact the developer (e.g., by opening a support issue) and voluntarily include your Hardware ID."
+          data-ar="طلبات الترخيص — فقط إذا اخترت التواصل مع المطوّر (مثل فتح طلب دعم) وضمّنت معرّف جهازك طوعًا."><strong>License requests</strong> — only if you choose to contact the
         developer (e.g., by opening a support issue) and voluntarily include your
         Hardware ID.</li>
     </ul>
 
-    <h2>Data Retention &amp; Deletion</h2>
-    <p>
+    <h2 data-en="Data Retention &amp; Deletion" data-ar="الاحتفاظ بالبيانات وحذفها">Data Retention &amp; Deletion</h2>
+    <p data-en="Your data remains on your device for as long as you use the application. To remove everything, simply uninstall CenturisTime and delete its local data directory — no separate account or server-side data exists to purge."
+       data-ar="تبقى بياناتك على جهازك طالما تستخدم التطبيق. لإزالة كل شيء، ما عليك سوى إلغاء تثبيت CenturisTime وحذف مجلد بياناته المحلي — لا يوجد حساب منفصل أو بيانات على الخادم لحذفها.">
       Your data remains on your device for as long as you use the application. To
       remove everything, simply uninstall CenturisTime and delete its local data
       directory — no separate account or server-side data exists to purge.
     </p>
 
-    <h2>Your Rights</h2>
-    <p>
+    <h2 data-en="Your Rights" data-ar="حقوقك">Your Rights</h2>
+    <p data-en="Because no personal data leaves your machine, there is no server-side profile to access, correct, or delete. You remain in full control of your data at all times through the application and your operating system's file management."
+       data-ar="نظرًا لعدم خروج أي بيانات شخصية من جهازك، لا يوجد ملف شخصي على الخادم للوصول إليه أو تصحيحه أو حذفه. تبقى أنت المتحكم الكامل في بياناتك في كل الأوقات عبر التطبيق وإدارة الملفات في نظام التشغيل لديك.">
       Because no personal data leaves your machine, there is no server-side profile
       to access, correct, or delete. You remain in full control of your data at all
       times through the application and your operating system's file management.
     </p>
 
-    <h2>Changes to This Policy</h2>
-    <p>
+    <h2 data-en="Changes to This Policy" data-ar="التغييرات على هذه السياسة">Changes to This Policy</h2>
+    <p data-en="We may update this policy as the product evolves. Material changes will be reflected by the &quot;Last updated&quot; date above and, where appropriate, noted in release notes."
+       data-ar="قد نحدّث هذه السياسة مع تطور المنتج. ستظهر التغييرات الجوهرية في تاريخ &quot;آخر تحديث&quot; أعلاه، وعند الاقتضاء، تُذكر في ملاحظات الإصدار.">
       We may update this policy as the product evolves. Material changes will be
       reflected by the "Last updated" date above and, where appropriate, noted in
       release notes.
     </p>
 
-    <h2>Contact</h2>
-    <p>
+    <h2 data-en="Contact" data-ar="التواصل">Contact</h2>
+    <p data-en="Questions about this policy? Open an issue in the CenturisTime releases repository."
+       data-ar="أسئلة حول هذه السياسة؟ افتح طلبًا في مستودع إصدارات CenturisTime.">
       Questions about this policy? Open an issue in the
       <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">CenturisTime
       releases repository</a>.
@@ -131,19 +148,21 @@
     <div class="footer-inner">
       <a class="brand" href="index.html">
         <img src="banner.svg" alt="" style="width:30px;height:30px;border-radius:8px;" />
-        CenturisTime
+        <span data-en="CenturisTime" data-ar="سنتوريس تايم">CenturisTime</span>
       </a>
       <div class="footer-links">
-        <a href="index.html#download">Download</a>
-        <a href="index.html">Home</a>
-        <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">Support</a>
+        <a href="index.html#download" data-en="Download" data-ar="تحميل">Download</a>
+        <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues" data-en="Support" data-ar="الدعم">Support</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© CenturisTime. All rights reserved.</span>
-      <span>CenturisTime is an independent product, not affiliated with any attendance-hardware manufacturer.</span>
+      <span data-en="© CenturisTime. All rights reserved." data-ar="© سنتوريس تايم. جميع الحقوق محفوظة.">© CenturisTime. All rights reserved.</span>
+      <span data-en="CenturisTime is an independent product, not affiliated with any attendance-hardware manufacturer."
+            data-ar="CenturisTime منتج مستقل، غير تابع لأي صانع أجهزة حضور.">CenturisTime is an independent product, not affiliated with any attendance-hardware manufacturer.</span>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
 </body>
 </html>
