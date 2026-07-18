@@ -1,69 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Attendance Manager</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-    h1 { font-size: 24px; }
-    h2 { font-size: 18px; margin-top: 24px; }
-    p { margin: 8px 0; }
-    ul { padding-left: 20px; }
-    li { margin: 4px 0; }
-    hr { margin: 32px 0; border: none; border-top: 1px solid #ddd; }
-    .footer { font-size: 12px; color: #666; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CenturisTime</title>
+  <meta name="description" content="CenturisTime privacy policy: local-first attendance data, encrypted storage, and no third-party uploads." />
+  <link rel="icon" href="banner.svg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Attendance Manager</strong> (the "App") is a local attendance management tool that communicates with ZKTeco biometric devices on your local network. This policy describes what data the App accesses and how it is handled.</p>
 
-  <hr>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="banner.svg" alt="CenturisTime logo" />
+        CenturisTime
+      </a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#download">Download</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </nav>
 
-  <h2>Data Collected</h2>
+  <main class="doc">
+    <h1>Privacy Policy</h1>
+    <p class="doc-meta">Effective date: 2026-07-18 · Last updated: 2026-07-18</p>
 
-  <h3>Device Connection Credentials</h3>
-  <ul>
-    <li><strong>IP address, port, and device password</strong> — used solely to connect to your ZKTeco device. Stored locally on your machine in a SQLite database. Never transmitted to any external server.</li>
-  </ul>
+    <span class="pill">Local-first · No uploads</span>
 
-  <h3>Attendance Records</h3>
-  <ul>
-    <li><strong>User ID, timestamp, punch status</strong> — synced from your ZKTeco device to your local SQLite database. All data stays on your machine. Never sent to any external server.</li>
-  </ul>
+    <p>
+      CenturisTime is designed around a simple principle: <strong>your attendance
+      data belongs to you and stays on your machine.</strong> This policy explains
+      what information the application handles, where it is stored, and who (if anyone)
+      it is shared with.
+    </p>
 
-  <h3>License Validation</h3>
-  <ul>
-    <li><strong>License key and machine fingerprint (SHA-256 hash of machine-uid)</strong> — sent to Keygen (api.keygen.sh) solely for license activation and validation. The fingerprint is a one-way hash and cannot be used to identify you personally.</li>
-  </ul>
+    <h2>Data Collected</h2>
+    <p>CenturisTime processes the following categories of data locally on your device:</p>
 
-  <h3>Local Preferences</h3>
-  <ul>
-    <li><strong>Locale selection (English/Arabic) and app settings</strong> — stored locally. Never transmitted.</li>
-  </ul>
+    <h3>Device connection credentials</h3>
+    <p>
+      The IP address, port, and password you enter to connect to an attendance
+      device are stored only in the local application database on your computer.
+      They are never transmitted to CenturisTime, its developers, or any third party.
+    </p>
 
-  <h2>Data Sharing</h2>
-  <p>We do <strong>not</strong> sell, rent, or share your data with third parties. The only external service contacted is Keygen (api.keygen.sh) for license validation, which receives only the license key and a hashed device fingerprint.</p>
+    <h3>Attendance records</h3>
+    <p>
+      Attendance logs, punch records, and timestamps pulled from your devices, as
+      well as employee and user records, are stored locally in an encrypted SQLite
+      database. This data is not uploaded anywhere.
+    </p>
 
-  <h2>Data Storage & Security</h2>
-  <p>All attendance data, user information, and configuration are stored in a local SQLite database on your machine. No cloud backup or remote access is provided. You control the data entirely.</p>
+    <h3>License validation</h3>
+    <p>
+      To activate the software, you provide a Hardware ID derived from your machine
+      and load a signed license file (<code>.lic</code>). The Hardware ID is a
+      one-way fingerprint used solely to bind the license to your device. It is not
+      sent to any server for validation — verification happens entirely on your
+      machine.
+    </p>
 
-  <h2>Third-Party Services</h2>
-  <p>The App uses the following third-party services:</p>
-  <ul>
-    <li><strong>Keygen</strong> (api.keygen.sh) — license activation and validation. <a href="https://keygen.sh/privacy/" target="_blank">Keygen Privacy Policy</a></li>
-    <li><strong>Tauri Updater</strong> — checks for app updates by fetching <code>updates.json</code> from GitHub Pages. No personal data is transmitted.</li>
-  </ul>
+    <h3>Local preferences</h3>
+    <p>
+      UI settings such as your selected language (English or Arabic) and saved
+      connection profiles are kept in local application storage.
+    </p>
 
-  <h2>Data Retention & Deletion</h2>
-  <p>All data is retained in the local SQLite database until you uninstall the App or manually delete it. To remove all data, uninstall the application and delete the <code>attendance.db</code> file from the app's data directory.</p>
+    <h2>Data Sharing</h2>
+    <p>
+      <strong>We do not sell, rent, or share your personal or attendance data with
+      anyone.</strong> Because all data resides on your device and is never uploaded,
+      there is no data to share.
+    </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this privacy policy from time to time. Changes will be posted at this URL.</p>
+    <h2>Data Storage &amp; Security</h2>
+    <p>
+      All stored data lives in an encrypted local SQLite database (<code>attendance.db.enc</code>)
+      on your computer, protected with AES-256-GCM using a machine-bound key. The
+      application communicates only with the attendance devices you explicitly
+      configure, over your local network.
+    </p>
 
-  <hr>
+    <h2>Third-Party Services</h2>
+    <p>
+      CenturisTime does not embed analytics, trackers, or advertising SDKs. The only
+      outbound network activity is:
+    </p>
+    <ul>
+      <li><strong>Automatic updates</strong> — the app checks a public update manifest
+        and downloads a new installer when available. No personal data is sent with
+        this request.</li>
+      <li><strong>License requests</strong> — only if you choose to contact the
+        developer (e.g., by opening a support issue) and voluntarily include your
+        Hardware ID.</li>
+    </ul>
 
-  <p class="footer"><strong>Attendance Manager</strong> — Ahmed Coder<br>Last updated: July 2026</p>
+    <h2>Data Retention &amp; Deletion</h2>
+    <p>
+      Your data remains on your device for as long as you use the application. To
+      remove everything, simply uninstall CenturisTime and delete its local data
+      directory — no separate account or server-side data exists to purge.
+    </p>
+
+    <h2>Your Rights</h2>
+    <p>
+      Because no personal data leaves your machine, there is no server-side profile
+      to access, correct, or delete. You remain in full control of your data at all
+      times through the application and your operating system's file management.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this policy as the product evolves. Material changes will be
+      reflected by the "Last updated" date above and, where appropriate, noted in
+      release notes.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy? Open an issue in the
+      <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">CenturisTime
+      releases repository</a>.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="index.html">
+        <img src="banner.svg" alt="" style="width:30px;height:30px;border-radius:8px;" />
+        CenturisTime
+      </a>
+      <div class="footer-links">
+        <a href="index.html#download">Download</a>
+        <a href="index.html">Home</a>
+        <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© CenturisTime. All rights reserved.</span>
+      <span>CenturisTime is an independent product, not affiliated with any attendance-hardware manufacturer.</span>
+    </div>
+  </footer>
+
 </body>
 </html>

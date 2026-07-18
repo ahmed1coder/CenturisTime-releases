@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CenturisTime — Attendance Management, simplified.</title>
+  <meta name="description" content="CenturisTime is a desktop app for pulling attendance logs and employee data from compatible attendance devices over your LAN. Local-first, bilingual, with automatic updates." />
+  <link rel="icon" href="banner.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <img src="banner.svg" alt="CenturisTime logo" />
+        CenturisTime
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="hide-sm" href="https://github.com/ahmed1coder/CenturisTime-releases/issues">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <img class="hero-bg" src="banner.svg" alt="" aria-hidden="true" />
+    <div class="hero-inner">
+      <span class="eyebrow">Desktop · Local-first · Bilingual</span>
+      <h1>CenturisTime</h1>
+      <p class="tagline">Attendance Management, simplified. Pull logs and employee data from your attendance devices and keep them organized — entirely on your machine.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://github.com/ahmed1coder/CenturisTime-releases/releases/latest">⬇ Download for Windows</a>
+        <a class="btn btn-ghost" href="#features">Learn more</a>
+      </div>
+      <p class="hero-note">Includes automatic in-app updates. No account required.</p>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>Everything stays on your machine</h2>
+        <p>A focused tool for attendance admins who want control, speed, and privacy.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h3>Connect over LAN</h3>
+          <p>Reach attendance devices on your network via the standard TCP attendance protocol (default port 4370), with resilient timeouts.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+          </div>
+          <h3>Pull logs &amp; users</h3>
+          <p>Sync attendance records, employee data, and device info in a few clicks. The UI never hangs if a device drops mid-sync.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          </div>
+          <h3>USB import</h3>
+          <p>Import flash-drive exports (<code>attlog.dat</code>, <code>user.dat</code>) with automatic encoding (UTF-8 / Windows-1256) and delimiter detection.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>
+          </div>
+          <h3>Local-first storage</h3>
+          <p>An encrypted local SQLite database. Your attendance data is never uploaded to any server.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zM3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
+          </div>
+          <h3>Bilingual</h3>
+          <p>Full English and Arabic interface with a persisted locale preference — switch anytime from Settings.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3-6.7M21 4v4h-4"/></svg>
+          </div>
+          <h3>Automatic updates</h3>
+          <p>The in-app updater fetches new releases and installs them silently — no manual download after the first install.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="section-head">
+        <h2>Download CenturisTime</h2>
+        <p>Free to download. Activate with a license to unlock on your machine.</p>
+      </div>
+      <div class="dl-card">
+        <table class="dl-table">
+          <thead>
+            <tr><th>Platform</th><th>Status</th><th>Installer</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Windows (x64)</td>
+              <td><span class="badge-ok">✅ Available</span></td>
+              <td><a href="https://github.com/ahmed1coder/CenturisTime-releases/releases/latest">CenturisTime_x64-setup.exe</a></td>
+            </tr>
+            <tr>
+              <td>macOS / Linux</td>
+              <td><span class="badge-soon">Planned</span></td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ol class="steps">
+          <li>Open the <a href="https://github.com/ahmed1coder/CenturisTime-releases/releases/latest">latest release</a> and download <code>CenturisTime_x64-setup.exe</code> from <strong>Assets</strong>.</li>
+          <li>Run the installer and follow the prompts.</li>
+          <li>On first launch, copy your <strong>Hardware ID</strong> and request a license (see below).</li>
+        </ol>
+
+        <a class="btn btn-primary" href="https://github.com/ahmed1coder/CenturisTime-releases/releases/latest">⬇ Download for Windows</a>
+
+        <div class="callout">
+          <h4>About Windows SmartScreen</h4>
+          <p>The installer isn't signed with a paid code-signing certificate yet, so Windows may show <em>"Windows protected your PC."</em> This is expected for independent software and is <strong>not</strong> a virus warning. Click <code>More info → Run anyway</code> to continue. Your data and device are unaffected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- License activation -->
+  <section class="features" id="license">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Simple license activation</h2>
+          <p>CenturisTime shows a <strong>Hardware ID</strong> unique to your machine on first launch. Activation is verified locally against a signed license file — no online account, no phoning home.</p>
+          <p>Open an issue with your Hardware ID, receive a <code>.lic</code> file, then load it from <strong>Settings → Load License</strong> (or just drag-and-drop the file onto the startup screen).</p>
+          <a class="btn btn-ghost" href="https://github.com/ahmed1coder/CenturisTime-releases/issues">Request a license</a>
+        </div>
+        <div>
+          <div class="card">
+            <h3>How it works</h3>
+            <ul style="padding-left:20px;color:var(--text-secondary);font-size:15px;">
+              <li>First launch → copy your Hardware ID.</li>
+              <li>Open an <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">issue</a> to request a license.</li>
+              <li>Load the returned <code>.lic</code> file (drag-and-drop supported).</li>
+              <li>Done — activation is tied to this machine only.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="#top">
+        <img src="banner.svg" alt="" style="width:30px;height:30px;border-radius:8px;" />
+        CenturisTime
+      </a>
+      <div class="footer-links">
+        <a href="#download">Download</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/ahmed1coder/CenturisTime-releases/issues">Support</a>
+        <a href="https://github.com/ahmed1coder/CenturisTime-releases/releases">Releases</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© CenturisTime. All rights reserved.</span>
+      <span>CenturisTime is an independent product, not affiliated with any attendance-hardware manufacturer.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
