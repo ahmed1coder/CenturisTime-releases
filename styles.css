@@ -434,6 +434,60 @@ section {
   font-weight: 700;
 }
 
+/* ---------- Download sub-links ---------- */
+.dl-sub {
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.dl-sub code {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.dl-custom {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.dl-custom a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.dl-custom a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.dl-custom span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.dl-custom span code {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
 /* ---------- Callout ---------- */
 .callout {
   max-width: 760px;
