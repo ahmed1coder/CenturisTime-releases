@@ -1,0 +1,11 @@
+{
+  "version": "0.2.2",
+  "notes": "Release v0.2.2",
+  "pub_date": "2026-07-28T17:13:38Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUNzJNWTJocWJvTDVxNXR0NkEzZG44T0tYNG9WMlpiWDFVTWNrN3BwdmhpcTZxNE5EK2l2ZmFUNThzOUh1RXZPUis1cmJsdHE0cGNyNDVjTUlqNTFRZ1Q3QTI1bUx3emdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1MjU4ODEwCWZpbGU6Q2VudHVyaXNUaW1lXzAuMi4yX3g2NC1zZXR1cC5leGUKQlhBUEQ1TnBwNEdOTUYxU1Z2bzdtUGZXTU9KUXV0YWMxZTU0eDUyUmJ0eC9UUTMrYlh6eG5ZSW4wOFFyY21BcDdBK3h2TjNQejBpbTUydFk2S2p0RGc9PQo=",
+      "url": "https://github.com/ahmed1coder/CenturisTime-releases/releases/download/v0.2.2/CenturisTime_0.2.2_x64-setup.exe"
+    }
+  }
+}
