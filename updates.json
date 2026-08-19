@@ -1,11 +1,11 @@
 {
-  "version": "1.0.3",
-  "notes": "Release v1.0.3",
-  "pub_date": "2026-08-18T16:18:54Z",
+  "version": "1.0.4",
+  "notes": "Release v1.0.4",
+  "pub_date": "2026-08-19T14:28:26Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUNzJNWTJocWJvTHpLYWVIQ1lOMWtVOFdHZ3hEVUgzZ3RKZE1GZFdJNStvZUlBZEtzcGNnQkpPRXkzQUNwbXVkNkRoRnZ4Mm9RVlAvcWtNbjJNczZSd28vdEhIWEV2NlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MDY5OTI2CWZpbGU6Q2VudHVyaXNUaW1lXzEuMC4zX3g2NC1zZXR1cC5leGUKdTNLZjdGem02eGYxeTYvNXZ1Vi9RRGpPZ1l0OGhFaWdVUFJ0WVUxWlgwbVlyTlUyNE13NDl4WjkvQ1V1YmY4cGVyRlJCR2p4alRTbW9pMkVVMEY3QXc9PQo=",
-      "url": "https://github.com/ahmed1coder/CenturisTime-releases/releases/download/v1.0.3/CenturisTime_1.0.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUNzJNWTJocWJvTDhIbWJaUlh5MWNBR1l3K2NvVXlLMno4WXFobmNnTU5KRW5XQW8yazNLYVhDTUhWcnphWEVQcGNZaWE3R2ZVeFB2Z2NtOU9PZHc4MWppL0hrc2FRZHdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MTQ5Njk1CWZpbGU6Q2VudHVyaXNUaW1lXzEuMC40X3g2NC1zZXR1cC5leGUKYXRaTWo1MEsvQVhQNXBTMkhTbDA4TFFsUzVzdE9EVkpHQ01xK0pOSERkbEJJYk4reGhrWVg1ak4yb0k0aStuN1FFMFFSTTVEdzBSeXR5aGd4WVJYREE9PQo=",
+      "url": "https://github.com/ahmed1coder/CenturisTime-releases/releases/download/v1.0.4/CenturisTime_1.0.4_x64-setup.exe"
     }
   }
 }
